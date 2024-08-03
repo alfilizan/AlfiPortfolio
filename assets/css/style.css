@@ -765,6 +765,8 @@ header .navbar ul li a:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* vertical line */
 .experience .timeline::after {
   content: "";
   position: absolute;
@@ -773,41 +775,43 @@ header .navbar ul li a:hover {
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -3px;
-  z-index: -2;
+  margin-left: -3px; /* Half of the width */
+  z-index: -1;
 }
+
 .experience .container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
+  box-sizing: border-box;
 }
-/*circles on timeline*/
-.experience .container::after {
-  content: "\f0b1";
+
+/* circles on timeline */
+.experience .container::before {
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
-  background-color: rgb(255, 255, 255);
+  left: 50%;
+  background-color: #fff;
   border: 4px solid #ff9f55;
   top: 15px;
   border-radius: 50%;
-  z-index: 100;
-  font-size: 1.89rem;
-  text-align: center;
-  font-weight: 600;
-  color: #02094b;
-  font-family: "Font Awesome\ 5 Free";
+  z-index: 1;
+  transform: translateX(-50%);
 }
-.experience .left {
-  left: 0;
+
+.experience .container.left::before {
+  right: -12px; /* Adjust as needed */
 }
-.experience .right {
-  left: 50%;
+
+.experience .container.right::before {
+  left: -12px; /* Adjust as needed */
 }
+
 /* arrows pointing right */
-.experience .left::before {
+.experience .left::after {
   content: " ";
   height: 0;
   position: absolute;
@@ -815,12 +819,12 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #f68c09;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f68c09;
+  border: 10px solid transparent;
+  border-left-color: #f68c09;
 }
-/* arrows pointing left  */
-.experience .right::before {
+
+/* arrows pointing left */
+.experience .right::after {
   content: " ";
   height: 0;
   position: absolute;
@@ -828,34 +832,37 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #f68c09;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #f68c09 transparent transparent;
+  border: 10px solid transparent;
+  border-right-color: #f68c09;
 }
-.experience .right::after {
-  left: -16px;
-}
+
 .experience .content {
   background-color: #f68c09;
   position: relative;
   border-radius: 6px;
+  color: #130909; /* Adjust text color for better visibility */
 }
+
 .experience .content .tag {
   font-size: 1.3rem;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
 }
+
 .experience .content .desc {
   margin-left: 1.5rem;
   padding-bottom: 1rem;
 }
+
 .experience .content .desc h3 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 .experience .content .desc p {
   font-size: 1.2rem;
 }
+
 /* view all button */
 .morebtn {
   display: flex;
@@ -867,7 +874,7 @@ header .navbar ul li a:hover {
   padding: 1.6rem 3rem;
   border-radius: 0.5em;
   transition: 0.5s;
-  color: #fff;
+  color: #110303;
   background: #2506ad;
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   text-align: center;
