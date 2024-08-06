@@ -47,7 +47,7 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certificate">Certificate</a></li>
             </ul>
         </nav>
 </header>
@@ -155,7 +155,7 @@
         </div>
         <div class="content">
         <h3>Bachelor of Social Science, Sociology</h3>
-        <p>UIN Syarif Hidayatullah Jakarta | IPK: 3.92/4.00</p>
+        <p>UIN Syarif Hidayatullah Jakarta | IPK: 3.93/4.00</p>
         <h4>2023-2027 | Pursuing </h4>
         </div>
     </div>
@@ -181,12 +181,57 @@
 
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
   <style>
-    .btn-purple {
+       .btn-purple {
       background-color: rgb(49, 19, 218);
       color: white;
       padding: 5px 5px;
       text-decoration: none;
       border-radius: 5px;
+    }
+
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.514);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card {
+      animation: fadeInUp 0.5s ease-out;
+    }
+
+ 
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    .col-md-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      padding: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
     }
   </style>
   <div class="container">
@@ -263,8 +308,8 @@
         <div class="card-body">
           <h5 class="card-title">Mini Project</h5>
           <p class="card-text">I have completed a mini project to make a coffee design web and mini portfolio.</p>
-          <a href="https://alfilizan.github.io/portfolio-bootstrap5/" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
-          <a href="https://alfilizan.github.io/mini-project-frontend-class/https://reactjsprojects.herokuapp.com/" class="btn btn-purple">View <i class="fas fa-eye"></i></a>
+          <a href="https://alfilizan.github.io/mini-project-frontend-class/" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
+          <a href="https://drive.google.com/file/d/1wDGjwsEMuKHaoDeJqrzFCJ5Y-lJyOVH1/view?usp=sharing" class="btn btn-purple">View <i class="fas fa-eye"></i></a>
         </div>
       </div>
         </div>
@@ -290,6 +335,39 @@
         </div>
       </div>
         </div>
+    <div class="col-md-4 mb-3">
+      <div class="card" >
+        <img src="img/projects/portpol1.png" class="card-img-top" alt="project1">
+        <div class="card-body">
+          <h5 class="card-title">Mini Portfolio</h5>
+          <p class="card-text">Recently completed a mini portfolio project using HTML, CSS, JavaScript, and Bootstrap 5.  </p>
+          <a href="https://alfilizan.github.io/portfolio-bootstrap5/" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
+          <a href="https://alfilizan.github.io/portfolio-bootstrap5/" class="btn btn-purple">View <i class="fas fa-eye"></i></a>
+        </div>
+      </div>
+        </div>
+    <div class="col-md-4 mb-3">
+      <div class="card" >
+        <img src="img/projects/newpt.png" class="card-img-top" alt="project1">
+        <div class="card-body">
+          <h5 class="card-title">New Portfolio</h5>
+          <p class="card-text">My latest web portfolio has launched, and it's more responsive than ever!.</p>
+          <a href="https://alfilizan.github.io/AlfiPortfolio/" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
+          <a href="https://alfilizan.github.io/AlfiPortfolio/" class="btn btn-purple">View <i class="fas fa-eye"></i></a>
+        </div>
+      </div>
+        </div>
+    <div class="col-md-4 mb-3">
+      <div class="card" >
+        <img src="img/projects/isk.jpeg" class="card-img-top" alt="project1">
+        <div class="card-body">
+          <h5 class="card-title">Cover ISK</h5>
+          <p class="card-text">Unveiling my newest creation: an inspiring ISK cover design. Elegant and professional ISK cover design, ready to captivate readers.</p>
+          <a href="https://drive.google.com/file/d/1gpDTujxM-G7PjS6YsEL-iBipxFg37ETX/view?usp=sharing" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
+          <a href="https://drive.google.com/file/d/1gpDTujxM-G7PjS6YsEL-iBipxFg37ETX/view?usp=sharing" class="btn btn-purple">View <i class="fas fa-eye"></i></a>
+        </div>
+      </div>
+        </div>
   
 </div>
 
@@ -297,6 +375,140 @@
 
 </section>
 <!-- work project section ends -->
+
+<!-- certificate -->
+<section class="certificate" id="certificate">
+  <h2 class="heading"><i class="fas fa-certificate"></i> My <span>Certificate</span></h2>
+  <style>
+    .certificate .btn-purple {
+      background-color: rgb(14, 10, 11);
+      color: white;
+      padding: 5px 5px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .certificate {
+      background-color: #bdd5dfc2; /* Warna kuning */
+      padding: 20px;
+    }
+
+    .certificate .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      background-color: rgb(226, 214, 43);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.514);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card {
+      animation: fadeInUp 0.5s ease-out;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    .col-md-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      padding: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    .heading {
+      margin-bottom: 30px;
+    }
+  </style>
+  <div class="container">
+    <div class="row text-center mb-3">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="img/projects/word.png" class="card-img-top" alt="project1">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Word</h5>
+            <p class="card-text">Officially certified in MS Word! Ready to boost my productivity and skills. </p>
+            <a href="https://drive.google.com/file/d/1Hf4UDvCEVR9UpjEOOtKZXXQEgo8tgtuw/view?usp=sharing" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="img/projects/ppt.png" class="card-img-top" alt="project1">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft PowerPoint</h5>
+            <p class="card-text">Thrilled to share that I've successfully completed a PowerPoint training course.</p>
+            <a href="https://drive.google.com/file/d/1L_nohaeZre4n_YlkmndGyYc_dQk61rHY/view?usp=sharing" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="img/projects/data.png" class="card-img-top" alt="project1">
+          <div class="card-body">
+            <h5 class="card-title">Intro Data Analysis</h5>
+            <p class="card-text">Just completed a comprehensive Data Analyst training program.</p>
+            <a href="https://youtzmedia.id/berita/Gaya-Kuliah-Beda!-Mahasiswa-Sosiologi-UIN-Jakarta-Kompak-Pakai-Baju-Pramuka,-Ini-Alasannya" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="img/projects/dasarweb.png" class="card-img-top" alt="project1">
+          <div class="card-body">
+            <h5 class="card-title">Web Programming Fundamentals</h5>
+            <p class="card-text">Thrilled to announce that I've successfully finished Basic Web Programming!.</p>
+            <a href="https://drive.google.com/file/d/1zbyaVvwsCe7xpmwxzufs620YZmjD6PoM/view?usp=sharing" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="img/projects/prontend.png" class="card-img-top" alt="project1">
+          <div class="card-body">
+            <h5 class="card-title">Web Front-End for Beginners</h5>
+            <p class="card-text">Just wrapped up a comprehensive training in Front-End Development.</p>
+            <a href="https://drive.google.com/file/d/1jBO6hrT7zqlNzokB0e3iJ2I6CAbdCWl_/view?usp=sharing" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="img/projects/integri.png" class="card-img-top" alt="project1">
+          <div class="card-body">
+            <h5 class="card-title">Integrity Training</h5>
+            <p class="card-text">Proud to announce that I’ve completed my Integrity Training! Committed to upholding ethical standards in all my professional endeavors</p>
+            <a href="https://drive.google.com/file/d/1XrINfIUr4lY2-MYHNhRI-l9lA-Pl__jb/view?usp=sharing" class="btn btn-purple">Visit <i class="fas fa-globe" style="margin-right: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- end certificate -->
 
 <!-- experience section starts -->
 <section class="experience" id="experience">

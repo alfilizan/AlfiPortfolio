@@ -758,7 +758,9 @@ header .navbar ul li a:hover {
   transform: translateX(5px);
 }
 /* work section ends */
-
+.certificate .heading span {
+  color: rgb(255, 196, 0);
+}
 /* experience section starts */
 .experience .timeline {
   position: relative;
@@ -935,6 +937,7 @@ header .navbar ul li a:hover {
   }
 }
 /* experience media queries ends */
+
 /* experience section ends */
 
 /* contact section starts */
