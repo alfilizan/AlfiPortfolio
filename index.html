@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="alfi sable, portfolio, alfi, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
-    <meta name="description" content="Welcome to Alfi's Portfolio. Full-Stack Web Developer and Android App Developer" />
+    <meta name="keywords" content="alfi, portfolio, alfi, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Alfi's Portfolio." />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Font Awesome -->
@@ -109,7 +109,7 @@
         </div>
         
         <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank" class="btn"><span>Resume</span>
+            <a href="https://drive.google.com/file/d/1I9KVyKD2j26bPnzakMATroGZUlhusFZ_/view?usp=sharing" target="_blank" class="btn"><span>Resume</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -180,40 +180,61 @@
 <section class="work" id="work">
 
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-  <style>
-       .btn-purple {
-      background-color: rgb(49, 19, 218);
-      color: white;
-      padding: 5px 5px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
+<style>
+  .btn-purple {
+    background-color: rgb(49, 19, 218);
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 
-    .card {
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+  .card {
+    position: relative; /* Tambahkan position relative */
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 0.5s ease-out;
+    animation-delay: 0.2s; /* Tambahkan delay */
+  }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.514);
-    }
+  .card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.514);
+  }
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+  .card:hover .intro {
+    height: 220px;
+    bottom: 240px;
+    background: black;
+  }
+
+  .card:hover p {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
 
     .card {
       animation: fadeInUp 0.5s ease-out;
     }
 
- 
+    .card {
+  animation: fadeInUp 0.5s ease-out;
+  animation-delay: 0.2s; /* Tambahkan delay */
+}
+
 
     .row {
       display: flex;
